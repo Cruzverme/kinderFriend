@@ -33,4 +33,3 @@ class RaffleService
     results
   end
 end
-view raw

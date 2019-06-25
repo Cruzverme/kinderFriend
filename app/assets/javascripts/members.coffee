@@ -14,11 +14,9 @@ $(document).on 'turbolinks:load', ->
         data: {}
         success: (data, text, jqXHR) ->
           M.toast({html: 'Membro removido', classes: 'green', 4000})
-#M.toast({'Membro removido', , classes: 'green', 4000}})
           $('#member_' + e.currentTarget.id).remove()
         error: (jqXHR, textStatus, errorThrown) ->
           M.toast({html: 'Problema na remoção de membro', classes: 'red', 4000 })
-          #M.toast({'Problema na remoção de membro', , classes: 'red', 4000}})
     return false
 
   $('.new_member').on 'submit', (e) ->
